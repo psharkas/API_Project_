@@ -19,6 +19,8 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	providedRuntime 'javax.servlet:jstl'
+	providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
 }
 
 tasks.named('test') {

@@ -46,5 +46,6 @@ target/
 /bin
 .metadata
 *.class
+src/main/resources/application.properties
 
 
