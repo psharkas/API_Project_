@@ -10,13 +10,13 @@
 </head>
 <body>
 
-<h1>Pokemon</h1>
-<p>${pokemon.name}</p>
-<p>${pokemon.id}</p>
-<p>${pokemon.baseExperience}</p>
-<c:out value="${pokemon.pokemonType}"></c:out>
+<form action="/home" method="post">
+	Search the Pokemon API: <input name="pokemon" type="text"/><br>	
+	<input type="submit"/>
+</form>
 
-<a href="/addFavorite?name=${pokemon.name}" class="button">Add to favorites</a>
+<a href="/favorites" class="button">View favorites</a>
+
 
 </body>
 </html>
