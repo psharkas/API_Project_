@@ -17,6 +17,7 @@
 				<th>Id</th>
 				<th>Base Experience</th>
 				<th>Type</th>
+				
 			</tr>
 		</thead>
 			<tbody>
@@ -26,8 +27,8 @@
 					<td>${pokemon.id}</td>
 					<td>${pokemon.baseExperience}</td>
 					<td>${pokemon.pokemonType}</td>
-<%-- 					<td><a href="/delete?id=${grade.id}" class="button">Delete</a></td>
- --%>					
+					<td><a href="/delete?id=${pokemon.id}" class="button">Delete</a></td>
+					
 										
 				</tr>
 			</c:forEach>

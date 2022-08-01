@@ -20,6 +20,25 @@ public class PokeResponse {
 	@JsonProperty("types")
 	private List<Type> pokemonType;
 	
+	private Sprite sprites;
+	
+	private List<Ability> abilities;
+	
+	public List<Ability> getAbilities() {
+		return abilities;
+	}
+
+	public void setAbilities(List<Ability> abilities) {
+		this.abilities = abilities;
+	}
+
+	public Sprite getSprites() {
+		return sprites;
+	}
+
+	public void setSprites(Sprite sprites) {
+		this.sprites = sprites;
+	}
 
 	public List<Type> getPokemonType() {
 		return pokemonType;
@@ -85,6 +104,48 @@ class Type{
 		return value.getName();
 	}
 	
+	
+	
+}
+
+class Ability{
+	
+	@JsonProperty("ability")
+	private abilityValue ability;
+	
+	@JsonProperty("is_hidden")
+	private Boolean isHidden;
+	
+	private Integer slot;
+
+	public abilityValue getAbility() {
+		return ability;
+	}
+
+	public void setAbility(abilityValue ability) {
+		this.ability = ability;
+	}
+
+	public Boolean getIsHidden() {
+		return isHidden;
+	}
+
+	public void setIsHidden(Boolean isHidden) {
+		this.isHidden = isHidden;
+	}
+
+	public Integer getSlot() {
+		return slot;
+	}
+
+	public void setSlot(Integer slot) {
+		this.slot = slot;
+	}
+	
+	@Override
+	public String toString() {
+		return ability.getName();
+	}
 	
 	
 }

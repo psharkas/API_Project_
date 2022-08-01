@@ -8,7 +8,7 @@ public interface PokemonRepository extends MongoRepository<PokeResponse,String> 
 	
 	List<PokeResponse> findAll();
 	PokeResponse save(PokeResponse pokemon);
-	void deleteById(String id);
+	void deleteById(Integer id);
 	
 
 }

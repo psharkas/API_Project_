@@ -59,5 +59,13 @@ public class PokemonController {
 		
 		return "favorites";
 	}
+	
+	
+	@RequestMapping("/delete")
+	public String deletePokemon(@RequestParam Integer id) {
+		repo.deleteById(id);
+		
+		return "redirect:/";
+	}
 
 }
