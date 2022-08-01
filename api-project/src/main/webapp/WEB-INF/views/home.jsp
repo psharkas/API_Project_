@@ -42,8 +42,12 @@ label{
 <p>${pokemon.name}</p>
 <p>${pokemon.id}</p>
 <p>${pokemon.baseExperience}</p>
+<c:out value="${pokemon.pokemonType}"></c:out>
+<c:out value="${pokemon.abilities}"></c:out>
+<img src = "${pokemon.sprites.sprite}">
+<img src = "${pokemon.sprites.spriteShiny}">
 
-
+<a href="/addFavorite?name=${pokemon.name}" class="button">Add to favorites</a>
 
 </body>
 </html>
