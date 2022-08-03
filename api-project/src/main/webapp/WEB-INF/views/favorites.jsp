@@ -6,10 +6,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Favorite Pokemon</title>
+<link rel="stylesheet" href="styles.css">
+<link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">               
 </head>
-<body>
+<body class="bfavorites">
 
+<div class="header">
+<h1>Your PokeFarm</h1>
+</div>
+<div class="gg-pokemon"></div>
+<div class="favorites">
 <table>
 		<thead>
 			<tr>
@@ -24,9 +31,11 @@
 			<c:forEach var="pokemon" items="${favPokemon}">
 				<tr>
 					<td>${pokemon.name}</td>
+					<td>${pokemon.pokemonType}</td>
 					<td>${pokemon.id}</td>
 					<td>${pokemon.baseExperience}</td>
-					<td>${pokemon.pokemonType}</td>
+					<td>${pokemon.height}</td>
+					<td>${pokemon.abilities}</td>
 					<td><a href="/delete?id=${pokemon.id}" class="button">Delete</a></td>
 					
 										
@@ -36,6 +45,7 @@
 	
 		
 </table>
+</div>
 <a href="/" class="button">Go home</a>
 
 

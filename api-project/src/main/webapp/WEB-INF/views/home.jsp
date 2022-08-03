@@ -6,20 +6,39 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Search Results for Pokemon</title>
+<link rel="stylesheet" href="styles.css">
+<link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">       
 </head>
-<body>
-
+<body class="bhome">
+<div class="header">
 <h1>Pokemon</h1>
-<p>${pokemon.name}</p>
-<p>${pokemon.id}</p>
-<p>${pokemon.baseExperience}</p>
-<c:out value="${pokemon.pokemonType}"></c:out>
-<c:out value="${pokemon.abilities}"></c:out>
-<img src = "${pokemon.sprites.sprite}">
-<img src = "${pokemon.sprites.spriteShiny}">
+</div>
+<div class="all-card">
+<div class="pokemon-card-container">
+		
+	<div class="pokemon-card">
+			<div class="background">
+			<img class= "image" src = "${pokemon.sprites.sprite}">
+			</div>
+			
+			<div class="content">
+				<h1 class="pokemon-name">${pokemon.name}</h1>
+				<span class="pokemon-type">${pokemon.pokemonType}</span>
+				<div class="pokemon-stats">
+				<p>ID : ${pokemon.id}</p>
+				<p>Exp : ${pokemon.baseExperience}</p>
+				<p>Height : <c:out value="${pokemon.height}"></c:out></p>
+				<p>Ability : <c:out value="${pokemon.abilities}"></c:out></p>
+				</div>
 
-<a href="/addFavorite?name=${pokemon.name}" class="button">Add to favorites</a>
+				<h1 class="pokemon-logo">Pokemon Card</h1>
+
+			</div>
+	</div>
+</div>
+</div>
+<a href="/addFavorite?name=${pokemon.name}" class="button">Catch this Pokemon</a>
 
 </body>
 </html>

@@ -11,6 +11,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class PokeResponse {
 	
 	private String name;
+	
 	@Id
 	private Integer id;
 	
@@ -24,6 +25,16 @@ public class PokeResponse {
 	
 	private List<Ability> abilities;
 	
+	private int height;
+	
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
 	public List<Ability> getAbilities() {
 		return abilities;
 	}
