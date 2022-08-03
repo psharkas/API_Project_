@@ -24,12 +24,18 @@
 			
 			<div class="content">
 				<h1 class="pokemon-name">${pokemon.name}</h1>
-				<span class="pokemon-type">${pokemon.pokemonType}</span>
+				<c:forEach var="type" items="${pokemon.pokemonType}">
+					<span class="pokemon-type">${type}</span>
+				</c:forEach>
 				<div class="pokemon-stats">
 				<p>ID : ${pokemon.id}</p>
 				<p>Exp : ${pokemon.baseExperience}</p>
 				<p>Height : <c:out value="${pokemon.height}"></c:out></p>
-				<p>Ability : <c:out value="${pokemon.abilities}"></c:out></p>
+				<p>Ability : </p>
+				<c:forEach var="ability" items="${pokemon.abilities}">
+					<c:out value="${ability}"></c:out><br>
+				</c:forEach>
+					
 				</div>
 
 				<h1 class="pokemon-logo">Pokemon Card</h1>
@@ -38,7 +44,9 @@
 	</div>
 </div>
 </div>
-<a href="/addFavorite?name=${pokemon.name}" class="button">Catch this Pokemon</a>
+<a href="/addFavorite?name=${pokemon.name}" class="button">Catch this Pokemon</a><br>
+<a href="/" class="button">Go home</a>
+
 
 </body>
 </html>
