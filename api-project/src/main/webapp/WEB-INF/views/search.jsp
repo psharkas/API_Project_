@@ -19,7 +19,7 @@
 	<br>
 	<br>
 	<form class="search" action="/home" method="post">
-		Search the Pokemon database: <input name="pokemon" type="text" /><br>
+		Search the Pokemon database: <input name="pokemon" type="text" placeholder="ex:pikachu"/><br>
 		<br>
 		<input class="button" type="submit" value="Search Tall Grass"/>
 	</form>

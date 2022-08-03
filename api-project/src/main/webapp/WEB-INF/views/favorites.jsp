@@ -24,6 +24,8 @@
 				<th>Id</th>
 				<th>Base Experience</th>
 				<th>Type</th>
+				<th>Height</th>
+				<th>Abilities</th>
 				
 			</tr>
 		</thead>
@@ -36,7 +38,7 @@
 					<td>${pokemon.baseExperience}</td>
 					<td>${pokemon.height}</td>
 					<td>${pokemon.abilities}</td>
-					<td><a href="/delete?id=${pokemon.id}" class="button">Delete</a></td>
+					<td><a href="/delete?id=${pokemon.id}" class="delete-button">Delete</a></td>
 					
 										
 				</tr>
@@ -46,6 +48,7 @@
 		
 </table>
 </div>
+<br>
 <a href="/" class="button">Go home</a>
 
 
