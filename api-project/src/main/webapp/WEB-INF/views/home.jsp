@@ -26,7 +26,7 @@
 				<h1 class="pokemon-name">${formattedName}</h1>
 				
 				<c:forEach var="type" items="${pokemon.pokemonType}">
-					<span class="pokemon-type">${output}</span>
+					<span class="pokemon-type">${type}</span>
 				</c:forEach>
 			
 				<div class="pokemon-stats">

@@ -27,6 +27,14 @@ public class PokeResponse {
 	
 	private int height;
 	
+//	public String findTypes(List<Type> pokemonType){
+//		String allTypes = "";
+//		
+//		for ()
+//		
+//		return null;
+//	}
+	
 	public int getHeight() {
 		return height;
 	}

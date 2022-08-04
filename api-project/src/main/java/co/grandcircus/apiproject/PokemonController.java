@@ -33,11 +33,14 @@ public class PokemonController {
 		String formatted = pokemon.substring(0, 1).toUpperCase() + pokemon.substring(1);
 		PokeResponse pokeType = apiService.getPokemon(pokemon);
 		for(Type type : pokeType.getPokemonType()) {
-			output = type.getValue().getName().substring(0, 1).toUpperCase() + type.getValue().getName().substring(1);
+			type.getValue().setName(type.getValue().getName().substring(0, 1).toUpperCase() + type.getValue().getName().substring(1));
+		}
+		
+		for(Ability ability : pokeType.getAbilities()) {
+			ability.getAbility().setName(ability.getAbility().getName().substring(0, 1).toUpperCase() + ability.getAbility().getName().substring(1));
 		}
 		model.addAttribute("pokemon", pokeType);
 		model.addAttribute("formattedName", formatted);
-		model.addAttribute("output", output);
 		
 		return "home";
 	}
@@ -59,8 +62,17 @@ public class PokemonController {
 	public String favoritePokemon(Model model) {
 		
 		List<PokeResponse> favPokemon = repo.findAll();
+		
 		for(PokeResponse pokemon : favPokemon) {
 			pokemon.setName(pokemon.getName().substring(0, 1).toUpperCase() + pokemon.getName().substring(1));
+			
+			for(Type type : pokemon.getPokemonType()) {
+				type.getValue().setName(type.getValue().getName().substring(0, 1).toUpperCase() + type.getValue().getName().substring(1));
+			}
+			for(Ability ability : pokemon.getAbilities()) {
+				ability.getAbility().setName(ability.getAbility().getName().substring(0, 1).toUpperCase() + ability.getAbility().getName().substring(1));
+			}
+		
 		}
 		model.addAttribute("favPokemon", favPokemon);
 		
