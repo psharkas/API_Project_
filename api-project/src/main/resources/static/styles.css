@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 .bsearch {
-	background-color: #F47174;
+	background-color: #9ed5f7;
 }
 
 .bhome {
-	background-color: #F47174;
+	background-color: #9ed5f7;
 }
 
 .bfavorites {
-	background-color: #F47174;
+	background-color: #9ed5f7;
 }
 
 .header {
@@ -17,8 +17,7 @@
 	font-size: xxx-large;
 	text-align: center;
 	color: #ffcb05;
-	text-shadow: 6px 6px #2a75bb;
-	
+	text-shadow: 8px 8px #0c12b0;
 }
 
 .search {
@@ -32,14 +31,14 @@
 .button {
 	text-align: center;
 	display: block;
-	background-color: #F47174;
+	background-color: #0c12b0;
 	border: 3px solid #3c5aa6;
 	font-family: 'Pokemon Solid', sans-serif;
 	font-size: x-large;
 	color: #ffcb05;
 	text-shadow: 2px 2px #2a75bb;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 507px;
+	margin-right: 507px;
 	width: 30%;
 }
 
@@ -53,18 +52,18 @@
 }      
 
 .leftpokeball{
-	display: inline;
+	display: block;
 	width: 100px;
 	float: left;
-	margin-left: 50px;
+	margin-left: auto;
 }
 
 .rightpokeball {
-	display: inline;
+	display: block;
 	transform: scaleX(-1);
 	width: 100px;
 	float: right;
-	margin-right: 50px;
+	margin-right: auto;
 }      
 
 .all-card {
@@ -134,7 +133,7 @@
 
 .delete-button {
 	text-align: center;
-	background-color: #F47174;
+	background-color: #0c12b0;
 	border: 3px solid #3c5aa6;
 	font-family: 'Pokemon Solid', sans-serif;
 	font-size: x-large;
@@ -167,17 +166,25 @@ table {
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: "Arial";
+    color: black;
+	text-shadow: 1px 1px #ffcb05;
+	font-weight: bolder;
 }
 
 th,
 td {
     padding: 12px 15px;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
 tbody tr {
@@ -195,5 +202,30 @@ tbody tr:last-of-type {
 tbody tr.active-row {
     font-weight: bold;
     color: #009879;
+}
+
+.right-berries {
+	float: right;
+	margin-right: auto;
+	width: 150px;
+}
+
+.left-berries {
+	float: left;
+	margin-left: auto;
+	width: 150px;
+}
+
+.left-mareep {
+	float: left;
+	margin-left: auto;
+	width: 175px;
+	transform: scaleX(-1);
+}
+
+.right-mareep {
+	float: right;
+	margin-right: auto;
+	width: 175px;
 }
                     

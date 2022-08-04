@@ -14,6 +14,7 @@
 <div class="header">
 <h1>Pokemon</h1>
 </div>
+<img class="leftpokeball" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png">
 <div class="all-card">
 <div class="pokemon-card-container">
 		
@@ -49,6 +50,7 @@
 	</div>
 </div>
 </div>
+	<img class="rightpokeball" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png">
 <a href="/addFavorite?name=${pokemon.name}" class="button">Catch this Pokemon</a><br>
 <a href="/" class="button">Go home</a>
 

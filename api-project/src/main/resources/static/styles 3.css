@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.bsearch {
+	background-color: #F47174;
+}
+
+.bhome {
+	background-color: #F47174;
+}
+
+.bfavorites {
+	background-color: #F47174;
+}
+
+.header {
+	font-family: 'Pokemon Solid', sans-serif;
+	font-size: xxx-large;
+	text-align: center;
+	color: #ffcb05;
+	text-shadow: 6px 6px #2a75bb;
+	
+}
+
+.search {
+	text-align: center;
+	font-family: 'Pokemon Solid', sans-serif;
+	font-size: x-large;
+	color: #ffcb05;
+	text-shadow: 2px 2px #2a75bb;
+}
+
+.button {
+	text-align: center;
+	display: inline-block;
+	background-color: #F47174;
+	border: 3px solid #3c5aa6;
+	font-family: 'Pokemon Solid', sans-serif;
+	font-size: x-large;
+	color: #ffcb05;
+	text-shadow: 2px 2px #2a75bb;
+}
+
+.button:hover {
+	background-color: #c7a008;
+	border: 3px solid #3c5aa6;
+}
+
+.favbutton {
+	text-align: center;
+}      
+
+.leftpokeball{
+	display: inline;
+	width: 100px;
+	float: left;
+	margin-left: 50px;
+}
+
+.rightpokeball {
+	display: inline;
+	transform: scaleX(-1);
+	width: 100px;
+	float: right;
+	margin-right: 50px;
+}      
+
+.all-card {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Arial";
+}             
+
+.pokemon-card-container {
+	background-color: #876c2d;
+	width: 350px;
+	height: auto;
+	margin: 10%;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.image {
+	width: 200px;
+	height: 200px;
+}
+
+.content {
+	background-color: #e6d2a1;
+	padding: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.background {
+	text-align: center;
+	background: linear-gradient(to right, #e6d2a1, #c2a04e);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.pokemon-name {
+	text-align: center;
+	font-size: 19px;
+	font-weight: lighter;
+	padding: 10px;
+}
+
+.pokemon-type {
+	background-color: black;
+	padding: 7px;
+	color: white;
+	border-radius: 5px;
+	width: 100px;
+	display: block;
+	text-align: center;	
+	position: relative;
+	top: -60px;
+}
+
+.pokemon-logo{
+	text-align: center;
+	font-size: 14px;
+	padding: 20px;
+}
+
+.pokemon-stats > p {
+	letter-spacing: 1px;
+}
+
+
+                    
