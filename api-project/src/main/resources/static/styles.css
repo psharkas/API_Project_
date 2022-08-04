@@ -31,8 +31,7 @@
 .button {
 	text-align: center;
 	display: block;
-	background-color: #0c12b0;
-	border: 3px solid #3c5aa6;
+	background-color: #0c12b0; border : 3px solid #3c5aa6;
 	font-family: 'Pokemon Solid', sans-serif;
 	font-size: x-large;
 	color: #ffcb05;
@@ -40,6 +39,7 @@
 	margin-left: 507px;
 	margin-right: 507px;
 	width: 30%;
+	border: 3px solid #3c5aa6;
 }
 
 .button:hover {
@@ -49,9 +49,9 @@
 
 .favbutton {
 	text-align: center;
-}      
+}
 
-.leftpokeball{
+.leftpokeball {
 	display: block;
 	width: 100px;
 	float: left;
@@ -64,7 +64,7 @@
 	width: 100px;
 	float: right;
 	margin-right: auto;
-}      
+}
 
 .all-card {
 	display: block;
@@ -72,7 +72,7 @@
 	margin-right: auto;
 	font-family: "Arial";
 	width: 30%;
-}             
+}
 
 .pokemon-card-container {
 	background-color: #876c2d;
@@ -116,18 +116,18 @@
 	border-radius: 5px;
 	width: 100px;
 	display: block;
-	text-align: center;	
+	text-align: center;
 	position: relative;
 	top: -90px;
 }
 
-.pokemon-logo{
+.pokemon-logo {
 	text-align: center;
 	font-size: 14px;
 	padding: 20px;
 }
 
-.pokemon-stats > p {
+.pokemon-stats>p {
 	letter-spacing: 1px;
 }
 
@@ -160,48 +160,47 @@ td {
 }
 
 table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin-left: auto;
-    margin-right: auto;
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	min-width: 400px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 thead tr {
-    background-color: white;
-    color: black;
-    text-align: center;
-    font-family: "Arial";
-    color: black;
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-family: "Arial";
+	color: black;
 	text-shadow: 1px 1px #ffcb05;
 	font-weight: bolder;
 }
 
-th,
-td {
-    padding: 12px 15px;
-    font-weight: bold;
-    font-family: "Arial";
+th, td {
+	padding: 12px 15px;
+	font-weight: bold;
+	font-family: "Arial";
 }
 
 tbody tr {
-    border-bottom: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
 }
 
 tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+	background-color: #f3f3f3;
 }
 
 tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+	border-bottom: 2px solid #009879;
 }
 
 tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
+	font-weight: bold;
+	color: #009879;
 }
 
 .right-berries {
@@ -232,11 +231,11 @@ tbody tr.active-row {
 .errorbody {
 	background-color: #9ed5f7;
 }
-           
+
 .errortext {
 	font-family: 'Pokemon Solid', sans-serif;
 	font-size: xxx-large;
 	text-align: center;
 	color: #ffcb05;
 	text-shadow: 8px 8px #0c12b0;
-}         
+}

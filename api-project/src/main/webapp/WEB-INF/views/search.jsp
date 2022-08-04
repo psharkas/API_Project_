@@ -26,7 +26,6 @@
 		src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png">
 	<img class="rightpokeball"
 		src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png">
-	
 	<br>
 	<br>
 	<div class="favbutton">
