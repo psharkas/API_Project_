@@ -7,12 +7,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Error Page</title>
+<link rel="stylesheet" href="styles.css">
+<link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet"> 
 </head>
-<body>
+<body class="errorbody">
 
-<H3>THIS IS AN ERROR PAGE, GO HOME</H3>
-<a href="/" class="button">Go home</a>
+<div class="errortext">
+<H3>You didn't type in the name or ID of a Pokemon</H3>
+<br>
 
+
+<a href="/" class="button">Try Again</a>
+</div>
 
 </body>
 </html>

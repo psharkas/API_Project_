@@ -228,4 +228,15 @@ tbody tr.active-row {
 	margin-right: auto;
 	width: 175px;
 }
-                    
+
+.errorbody {
+	background-color: #9ed5f7;
+}
+           
+.errortext {
+	font-family: 'Pokemon Solid', sans-serif;
+	font-size: xxx-large;
+	text-align: center;
+	color: #ffcb05;
+	text-shadow: 8px 8px #0c12b0;
+}         
