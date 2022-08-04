@@ -21,9 +21,9 @@
 		<thead>
 			<tr>
 				<th>Name</th>
-				<th>Id</th>
-				<th>Base Experience</th>
 				<th>Type</th>
+				<th>ID</th>
+				<th>Base Experience</th>
 				<th>Height</th>
 				<th>Abilities</th>
 				
@@ -33,11 +33,13 @@
 			<c:forEach var="pokemon" items="${favPokemon}">
 				<tr>
 					<td>${pokemon.name}</td>
-					<td>${pokemon.pokemonType}</td>
+					<td>${pokemon.pokemonType[0]} / ${pokemon.pokemonType[1]}</td>
 					<td>${pokemon.id}</td>
 					<td>${pokemon.baseExperience}</td>
 					<td>${pokemon.height}</td>
-					<td>${pokemon.abilities}</td>
+					<td><c:forEach var="ability" items="${pokemon.abilities}">
+					<c:out value="${ability},"></c:out>
+				</c:forEach></td>
 					<td><a href="/delete?id=${pokemon.id}" class="delete-button">Delete</a></td>
 					
 										

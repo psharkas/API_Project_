@@ -23,19 +23,24 @@
 			</div>
 			
 			<div class="content">
-				<h1 class="pokemon-name">${pokemon.name}</h1>
+				<h1 class="pokemon-name">${formattedName}</h1>
+				
 				<c:forEach var="type" items="${pokemon.pokemonType}">
-					<span class="pokemon-type">${type}</span>
+					<span class="pokemon-type">${output}</span>
 				</c:forEach>
+			
 				<div class="pokemon-stats">
 				<p>ID : ${pokemon.id}</p>
 				<p>Exp : ${pokemon.baseExperience}</p>
 				<p>Height : <c:out value="${pokemon.height}"></c:out></p>
-				<p>Ability : </p>
+				<p>Ability : 
+				
 				<c:forEach var="ability" items="${pokemon.abilities}">
-					<c:out value="${ability}"></c:out><br>
+					<c:out value="${ability},"></c:out>
 				</c:forEach>
-					
+				</p>
+			
+				
 				</div>
 
 				<h1 class="pokemon-logo">Pokemon Card</h1>
