@@ -29,6 +29,7 @@ public class PokemonController {
 
 	@PostMapping("/home")
 	public String searchPokemon(Model model, @RequestParam String pokemon) {
+		
 		String output = "";
 		String formatted = pokemon.substring(0, 1).toUpperCase() + pokemon.substring(1);
 		PokeResponse pokeType = apiService.getPokemon(pokemon);
@@ -86,5 +87,11 @@ public class PokemonController {
 
 		return "redirect:/";
 	}
+	
+//	@RequestMapping("/error")
+//	public String errorPage()
+//	{
+//		return "error";
+//	}
 
 }

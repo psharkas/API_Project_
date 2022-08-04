@@ -21,6 +21,7 @@
 		<thead>
 			<tr>
 				<th>Name</th>
+				<th>Sprite</th>
 				<th>Type</th>
 				<th>ID</th>
 				<th>Base Experience</th>
@@ -33,6 +34,7 @@
 			<c:forEach var="pokemon" items="${favPokemon}">
 				<tr>
 					<td>${pokemon.name}</td>
+					<td><img class= "img" src = "${pokemon.sprites.sprite}"></td>
 					<td>${pokemon.pokemonType[0]} / ${pokemon.pokemonType[1]}</td>
 					<td>${pokemon.id}</td>
 					<td>${pokemon.baseExperience}</td>
